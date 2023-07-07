@@ -139,6 +139,6 @@ Mosaic -> Netscape Navigator -> Internet Explorer -> Mosilla Firefox -> Google C
         - 다른 인라인 엘리먼트를 포함할 수 있지만, 블록 레벨 엘리먼트를 직접 포함할 수는 없다.
 
 <!--ex-->
-<HTML Block and Inline Elements src="https://github.com/AnYeHyeon/img/blob/main/html%20block%20level%20inline%20elements.jpg" width=1200><br>
+<HTML Block and Inline Elements src="https://github.com/AnYeHyeon/img/blob/main/html%20block%20level%20inline%20elements.jpg" alt="Block and Inline Elements" width=1200><br>
 
 [HTML Block and Inline Elements](https://parkminseob.github.io/html/css/htmlCss-08/)
