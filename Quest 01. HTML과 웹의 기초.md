@@ -18,9 +18,19 @@ HTML은 HyperText Markup Language의 약자로, 웹 브라우저에 내용을 �
 - `<body>` : 본문
 - `<html>` : 전체를 감싸주기
 - `<!DOCTYPE html>` : html의 버전을 알려줌
-- `<br>` : 강제로 줄바꿈
-- `<p>` : 단락
+- `<br>` : 강제로 줄바꿈 (boid element)
+- `<p>` : 단락 -> CSS로 간격을 조절해 줄 수 있다
 - `<div>` : 웹페이지를 꾸며줄대 그룹핑 해주는 태그
+- `<img>` : 이미지 `<img src="img.jpg" width="200" height="300" alt="산 이미지" title="산 이미지">`
+- `<table>` : 표
+- `<form action="">` 
+- `<input type="text" name="id" value="default value">` : 사용자로부터 text를 입력받음
+- `<textares 속성은 에디터가 추천>` : 테스트를 입력할 수 있는 박스가 나옴. 태그 사이에 기본 값을 넣을 수 있다.
+- `<select> <option>` : dropdown list 콤보박스
+
+
+
+
 
 
 ### Checklist
