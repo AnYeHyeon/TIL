@@ -1,3 +1,4 @@
+# Week 1 : Github + Coding Environment, HTML, CSS
 # Quest 01. HTML과 웹의 기초
 ## Introduction
 ---
@@ -53,7 +54,7 @@ HTML은 HyperText Markup Language의 약자로, 웹 브라우저에 내용을 �
 
 
 
-### Checklist
+## Checklist
 ---
 - HTML 표준의 역사는 어떻게 될까요?   
 : GML -> SGML -> SGMLguid -> HTML   
@@ -141,8 +142,8 @@ Mosaic -> Netscape Navigator -> Internet Explorer -> Mosilla Firefox -> Google C
 
 [HTML Block and Inline Elements](https://parkminseob.github.io/html/css/htmlCss-08/)
 
-### Quest
+## Quest
 ---
 ![html skeleton](https://github.com/AnYeHyeon/img/blob/main/html%20skeleton.png)   
-**과제 코드**
+### 과제 코드
 [quest1 html code](https://github.com/AnYeHyeon/2023-SME-SW-Bootcamp/blob/main/Yehyeon/Quest01_skeleton.html)
