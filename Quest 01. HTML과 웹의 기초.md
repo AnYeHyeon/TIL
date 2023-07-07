@@ -145,4 +145,4 @@ Mosaic -> Netscape Navigator -> Internet Explorer -> Mosilla Firefox -> Google C
 ---
 ![html skeleton](https://github.com/AnYeHyeon/img/blob/main/html%20skeleton.png)   
 **과제 코드**
-![quest1 html code](https://github.com/AnYeHyeon/2023-SME-SW-Bootcamp/blob/main/Yehyeon/Quest01_skeleton.html)
+[quest1 html code](https://github.com/AnYeHyeon/2023-SME-SW-Bootcamp/blob/main/Yehyeon/Quest01_skeleton.html)
