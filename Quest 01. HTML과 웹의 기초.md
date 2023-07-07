@@ -5,7 +5,7 @@ HTML은 HyperText Markup Language의 약자로, 웹 브라우저에 내용을 �
 - HTML: HyperText Markup Language   
 
 ## Contents
-### 속성
+### <태그 속성>
 - 링크걸기: `<a href='link'>도널드 커누스</a>`
 - 새로운 탭에서 열기 링크 뒤에 `target=_blank` 추가해주기
 - 미리보기 title="설명"
@@ -18,7 +18,7 @@ HTML은 HyperText Markup Language의 약자로, 웹 브라우저에 내용을 �
 - `<body>` : 본문
 - `<html>` : 전체를 감싸주기
 - `<!DOCTYPE html>` : html의 버전을 알려줌
-- `<br>` : 줄바꿈
+- `<br>` : 강제로 줄바꿈
 - `<p>` : 단락
 - `<div>` : 웹페이지를 꾸며줄대 그룹핑 해주는 태그
 
