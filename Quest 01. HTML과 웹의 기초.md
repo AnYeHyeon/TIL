@@ -140,3 +140,9 @@ Mosaic -> Netscape Navigator -> Internet Explorer -> Mosilla Firefox -> Google C
 ![HTML Block and Inline Elements](https://github.com/AnYeHyeon/img/blob/main/html%20block%20level%20inline%20elements.jpg)   
 
 [HTML Block and Inline Elements](https://parkminseob.github.io/html/css/htmlCss-08/)
+
+### Quest
+---
+![html skeleton](https://github.com/AnYeHyeon/img/blob/main/html%20skeleton.png)   
+**과제 코드**
+![quest1 html code](https://github.com/AnYeHyeon/2023-SME-SW-Bootcamp/blob/main/Yehyeon/Quest01_skeleton.html)
