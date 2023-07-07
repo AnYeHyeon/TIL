@@ -53,8 +53,6 @@ HTML은 HyperText Markup Language의 약자로, 웹 브라우저에 내용을 �
 
 
 
-
-
 ### Checklist
 ---
 - HTML 표준의 역사는 어떻게 될까요?   
