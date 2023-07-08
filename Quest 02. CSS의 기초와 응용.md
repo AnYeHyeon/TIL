@@ -4,9 +4,40 @@
 ### CSS란?
 Cascading Styel Sheet: 위에서 연속적으로 떨어지며 디자인 양식을 물어봄
 Author style(CSS) -> User style(사용자 지정) -> Browser(html)
-- ! important: 나쁜 아키텍쳐
-- 
+- ! important: 나쁜 아키텍쳐이므로 되도록 쓰지말것
+- selectors
+```
+selector{
+  property: value;
+}
+```
+  - Universal `*` : 모든 태그를 고름
+```
+{
+  color: green;
+}
+```
+  - type `Tag` : 특정 태그를 고름
+  ```
+li {
+  color: blue;
+}  ## 태그 가까이에 설정하면 우선순위가 높아짐
+  ```
+  - ID `#id` : 해당 ID만 고름
+  ```
+  #special {
+    color: pink; <-->
+  }
+  ```
+  - Class `.class`
+  - State `:` 
+  - Attribute `[]`
 
+
+1. universal selector : 모든 태그를 선택
+
+```
+2. 
 
 ## Checklist
 - CSS를 HTML에 적용하는 세 가지 방법은 무엇일까요?
