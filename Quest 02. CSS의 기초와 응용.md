@@ -1,13 +1,13 @@
 # Week 1 : Github + Coding Environment, HTML, CSS
 # Quest 02. CSS의 기초와 응용
 ## Contenst
-### CSS란?
+### **CSS란?**
 Cascading Styel Sheet: 위에서 연속적으로 떨어지며 디자인 양식을 물어봄
 Author style(CSS) -> User style(사용자 지정) -> Browser(html)
 - ! important: 나쁜 아키텍쳐이므로 되도록 쓰지말것
 
-### 6가지 선택자
----
+### **6가지 선택자**
+
 - selectors
 ```
 selector{
@@ -31,7 +31,7 @@ li {
 
   - ID `#id` : 해당 ID만 고름
   ```
-  #special {
+  #special {  # 앞에 태그를 붙여주면 해당 태그만 적용됨
     color: pink;  # id가 special 인 것만 핑크색으로 바뀜
   ```
   - Class `.class`
@@ -39,6 +39,9 @@ li {
 .red {
   width: 100px;
   height: 100px;
+  padding: 20px 20px 20px 20px;  # 컨텐츠 안에 들어가는 space
+  border: 2px dashed red;
+  margin: 20px; # 컨탠츠 밖에 들어가는 space
   background: yellow;  # div의 컨테이너를 꾸며줌
 }
   ```
