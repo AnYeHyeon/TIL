@@ -21,7 +21,8 @@ HTML은 HyperText Markup Language의 약자로, 웹 브라우저에 내용을 �
 - `<!DOCTYPE html>` : html의 버전을 알려줌
 - `<br>` : 강제로 줄바꿈 (boid element)
 - `<p>` : 단락 -> CSS로 간격을 조절해 줄 수 있다
-- `<div>` : 웹페이지를 꾸며줄대 그룹핑 해주는 태그
+- `<div>` : 웹페이지를 꾸며줄대 그룹핑 해주는 태그. 줄 바꿈이 된다.
+- ++`<span>` : div와 같이 특별한 기능을 갖고있지는 않는다. 줄 바꿈이 되지 않는다.
 - `<img>` : 이미지 `<img src="img.jpg" width="200" height="300" alt="산 이미지" title="산 이미지">`
 - `<table>` : 표
 - `<form action="">` 
