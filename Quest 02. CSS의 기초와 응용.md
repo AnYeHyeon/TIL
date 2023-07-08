@@ -59,6 +59,29 @@ a[href="naver.com"] {
 
   - Attribute `[]`
 
+### **Position**
+```
+div {
+  width:
+  height:
+  margin-botton:
+  background:
+}
+
+.container {
+  background:
+  left:
+  top:
+  position: relative; /*해줘야 전체 div의 위치가 이동됨. */
+}
+
+.box {
+  background:
+  left:
+  top:
+  position: relative;  /* 박스의 개체가 옮겨감, absolute : 컨테이너에서(상자안에서) 움직임, fixed: 윈도우 페이지 안에서 움직임. sticky : 스크롤해도 없어지지 않음.*/
+}
+```
 
 
 ## Checklist
