@@ -1,5 +1,13 @@
 # Week 1 : Github + Coding Environment, HTML, CSS
 # Quest 02. CSS의 기초와 응용
+## Contenst
+### CSS란?
+Cascading Styel Sheet: 위에서 연속적으로 떨어지며 디자인 양식을 물어봄
+Author style(CSS) -> User style(사용자 지정) -> Browser(html)
+- ! important: 나쁜 아키텍쳐
+- 
+
+
 ## Checklist
 - CSS를 HTML에 적용하는 세 가지 방법은 무엇일까요?
   - 세 가지 방법 각각의 장단점은 무엇일까요?
