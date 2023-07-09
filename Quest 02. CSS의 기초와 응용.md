@@ -84,10 +84,30 @@ div {
 ```
 
 ### **Flexbox**
-1. container, item에 속성값이 존재   
+### 1. container, item에 속성값이 존재   
+- container
+  - display
+  - flex-direction (row(-reverse), column(-reverse))
+  - flex-wrap (nowrap, wrap 자동으로 내려감, reverse 가능)
+  - flex-flow 위에 두 가지 합한거
+  - justify-content 아이템배치 (flex-start, flex-end, center, space-around, space-evenly, space-betwwn)
+  - align-tiems 반대축!!
+  - align-content
+  <br> 
+  <br> 
 - item 
-2. 중심축과 반대축이 있다.
+  - order: 아이템별로 순서를 정할 수 있다. 잘쓰지는 않음
+  - flex-grow: 컨테이너를 채우려고 함.
+  - flex-shrink: 컨테이너 사이즈 변경시, 줄어드는 정도
+  - flex : `flex-basis: auto;`
+  - align-self : 아이템별로 위치 선정
 
+### 2. 중심축과 반대축이 있다.
+- main axis ->
+- cross axis v
+
+### 색상 HEX 값을 알려주는 사이트
+[COLOR TOOL](https://www.google.com/search?q=color+tool&oq=color+tool&aqs=chrome..69i57.3937j0j7&sourceid=chrome&ie=UTF-8)
 
 
 
