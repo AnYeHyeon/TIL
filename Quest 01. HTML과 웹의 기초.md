@@ -15,7 +15,7 @@ HTML은 HyperText Markup Language의 약자로, 웹 브라우저에 내용을 �
 - `<ol>` : 순서가 있는 항목
 - `<h1>` : 제목 양식
 - `<meta charset-"utf-8">` : 글자 깨질 때
-- `<head>` : 부가적인 정보
+- `<head>` : 부가적인 정보, html 문서에 대한 설명, **meta data**
 - `<body>` : 본문
 - `<html>` : 전체를 감싸주기
 - `<!DOCTYPE html>` : html의 버전을 알려줌
