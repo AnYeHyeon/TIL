@@ -1,155 +1,49 @@
 # Week 2 : JavaScript+Jquery, DB SQL + DB Modelling
 # Quest 03. 자바스크립트와 DOM
-## Contents
-### **CSS란?**
-Cascading Styel Sheet: 위에서 연속적으로 떨어지며 디자인 양식을 물어봄
-Author style(CSS) -> User style(사용자 지정) -> Browser(html)
-- ! important: 나쁜 아키텍쳐이므로 되도록 쓰지말것
 
-### **6가지 선택자**
+## Introduction
+* 자바스크립트는 현재 웹 생태계의 근간인 프로그래밍 언어입니다. 이번 퀘스트에서는 자바스크립트의 기본적인 문법과, 자바스크립트를 통해 브라우저의 실제 DOM 노드를 조작하는 법에 대하여 알아볼 예정입니다.
 
-- selectors
-```
-selector{
-  property: value;
-}
-```
+## Topics
+* 자바스크립트의 역사
+* 기본 자바스크립트 문법
+* DOM API
+  * `document` 객체
+  * `document.getElementById()`, `document.querySelector()`, `document.querySelectorAll()` 함수들
+  * 기타 DOM 조작을 위한 함수와 속성들
+* 변수의 스코프
+  * `var`, `let`, `const`
 
-  - Universal `*` : 모든 태그를 고름
-```
-{
-  color: green;
-}
-```
-
-  - type `Tag` : 특정 태그를 고름
-  ```
-li {
-  color: blue;
-}  ## 태그 가까이에 설정하면 우선순위가 높아짐
-  ```
-
-  - ID `#id` : 해당 ID만 고름
-  ```
-  #special {  # 앞에 태그를 붙여주면 해당 태그만 적용됨
-    color: pink;  # id가 special 인 것만 핑크색으로 바뀜
-  ```
-  - Class `.class`
-  ```
-.red {
-  width: 100px;
-  height: 100px;
-  padding: 20px 20px 20px 20px;  # 컨텐츠 안에 들어가는 space
-  border: 2px dashed red;
-  margin: 20px; # 컨탠츠 밖에 들어가는 space
-  background: yellow;  # div의 컨테이너를 꾸며줌
-}
-  ```
-
-  - State `:` 
-```
-button:hover {
-  color: red;
-  background: beige;
-}
-a[href="naver.com"] {
-  color: purple;
-}
-```
-
-  - Attribute `[]`
-
-### **Position**
-```
-div {
-  width:
-  height:
-  margin-botton:
-  background:
-}
-
-.container {
-  background:
-  left:
-  top:
-  position: relative; /*해줘야 전체 div의 위치가 이동됨. */
-}
-
-.box {
-  background:
-  left:
-  top:
-  position: relative;  /* 박스의 개체가 옮겨감, absolute : 컨테이너에서(상자안에서) 움직임, fixed: 윈도우 페이지 안에서 움직임. sticky : 스크롤해도 없어지지 않음.*/
-}
-```
-
-### **Flexbox**
-### 1. container, item에 속성값이 존재   
-- container
-  - display
-  - flex-direction: (row(-reverse), column(-reverse))
-  - flex-wrap: (nowrap, wrap 자동으로 내려감, reverse 가능)
-  - flex-flow 위에 두 가지 합한거
-  - justify-content: 아이템배치 (flex-start, flex-end, center, space-around, space-evenly, space-betwwn)
-  - align-tiems: 반대축!!
-  - align-content
-  <br> 
-  <br> 
-- item 
-  - order: 아이템별로 순서를 정할 수 있다. 잘쓰지는 않음
-  - flex-grow: 컨테이너를 채우려고 함.
-  - flex-shrink: 컨테이너 사이즈 변경시, 줄어드는 정도
-  - flex : `flex-basis: auto;`
-  - align-self : 아이템별로 위치 선정
-
-### 2. 중심축과 반대축이 있다.
-- main axis ->
-- cross axis v
-
-### 색상 HEX 값을 알려주는 사이트
-[COLOR TOOL](https://www.google.com/search?q=color+tool&oq=color+tool&aqs=chrome..69i57.3937j0j7&sourceid=chrome&ie=UTF-8)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## Resources
+* [자바스크립트 첫걸음](https://developer.mozilla.org/ko/docs/Learn/JavaScript/First_steps)
+* [자바스크립트 구성요소](https://developer.mozilla.org/ko/docs/Learn/JavaScript/Building_blocks)
+* [Just JavaScript](https://justjavascript.com/)
 
 ## Checklist
-- CSS를 HTML에 적용하는 세 가지 방법은 무엇일까요?
-  - 세 가지 방법 각각의 장단점은 무엇일까요?
-- CSS 규칙의 우선순위는 어떻게 결정될까요?
-- CSS의 박스모델은 무엇일까요? 박스가 화면에서 차지하는 크기는 어떻게 결정될까요?
-- float 속성은 왜 좋지 않을까요?
-- Flexbox(Flexible box)와 CSS Grid의 차이와 장단점은 무엇일까요?
-- CSS의 비슷한 요소들을 어떤 식으로 정리할 수 있을까요?
+* 자바스크립트는 버전별로 어떻게 변화하고 발전해 왔을까요?
+  * 자바스크립트의 버전들을 가리키는 ES5, ES6, ES2016, ES2017 등은 무엇을 이야기할까요?
+  * 자바스크립트의 표준은 어떻게 제정될까요?
+* 자바스크립트의 문법은 다른 언어들과 비교해 어떤 특징이 있을까요?
+  * 자바스크립트에서 반복문을 돌리는 방법은 어떤 것들이 있을까요?
+* 자바스크립트를 통해 DOM 객체에 CSS Class를 주거나 없애려면 어떻게 해야 하나요?
+  * IE9나 그 이전의 옛날 브라우저들에서는 어떻게 해야 하나요?
+* 자바스크립트의 변수가 유효한 범위는 어떻게 결정되나요?
+  * `var`과 `let`으로 변수를 정의하는 방법들은 어떻게 다르게 동작하나요?
+* 자바스크립트의 익명 함수는 무엇인가요?
+  * 자바스크립트의 Arrow function은 무엇일까요?
 
 ## Quest
-- Quest 01에서 만들었던 HTML을 바탕으로, 네이버 모바일 그림의 레이아웃과 CSS를 최대한 비슷하게 흉내내 보세요. 꼭 완벽히 정확할 필요는 없으나 align 등의 속성은 일치해야 합니다.
-- 주의사항: 되도록이면 원래 페이지의 CSS를 참고하지 말고 아무것도 없는 백지에서 시작해 보도록 노력해 보세요!
+* (Quest 03-1) 초보 프로그래머의 영원한 친구, 별찍기 프로그램입니다.
+  * [이 그림](jsStars.png)과 같이, 입력한 숫자만큼 삼각형 모양으로 콘솔에 별을 그리는 퀘스트 입니다.
+    * 줄 수를 입력받고 그 줄 수만큼 별을 그리면 됩니다. 위의 그림은 5를 입력받았을 때의 결과입니다.
+  * `if`와 `for`와 `function`을 다양하게 써서 프로그래밍 하면 더 좋은 코드가 나올 수 있을까요?
+  * 입력은 `prompt()` 함수를 통해 받을 수 있습니다.
+  * 출력은 `console.log()` 함수를 통해 할 수 있습니다.
+* (Quest 03-2) skeleton 디렉토리에 주어진 HTML을 조작하는 스크립트를 완성해 보세요.
+  * 첫째 줄에 있는 사각형의 박스들을 클릭할 때마다 배경색이 노란색↔흰색으로 토글되어야 합니다.
+  * 둘째 줄에 있는 사각형의 박스들을 클릭할 때마다 `enabled`라는 이름의 CSS Class가 클릭된 DOM 노드에 추가되거나 제거되어야 합니다.
+* 구현에는 여러 가지 방법이 있으나, 다른 곳은 건드리지 않고 TODO 부분만 고치는 방향으로 하시는 것을 권장해 드립니다.
 
-## Advenced
-- 왜 CSS는 어려울까요?
-- CSS의 어려움을 극복하기 위해 어떤 방법들이 제시되고 나왔을까요?
-- CSS가 브라우저에 의해 해석되고 적용되기까지 내부적으로 어떤 과정을 거칠까요?
-- 웹 폰트의 경우에는 브라우저 엔진 별로 어떤 과정을 통해 렌더링 될까요?
+## Advanced
+* Quest 03-1의 코드를 더 구조화하고, 중복을 제거하고, 각각의 코드 블록이 한 가지 일을 전문적으로 잘하게 하려면 어떻게 해야 할까요?
+* Quest 03-2의 스켈레톤 코드에서 `let` 대신 `var`로 바뀐다면 어떤 식으로 구현할 수 있을까요?
