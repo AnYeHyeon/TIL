@@ -1,6 +1,6 @@
 # Week 1 : Github + Coding Environment, HTML, CSS
 # Quest 02. CSS의 기초와 응용
-## Contenst
+## Contents
 ### **CSS란?**
 Cascading Styel Sheet: 위에서 연속적으로 떨어지며 디자인 양식을 물어봄
 Author style(CSS) -> User style(사용자 지정) -> Browser(html)
