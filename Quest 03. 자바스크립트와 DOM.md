@@ -165,10 +165,14 @@ swich(평가항목) {
 ```
 
 ### 함수(function)
-
-
-
-
+```
+function 함수 sayHello 함수명 (매개변수) {
+  console.log('Hello, ${name}');
+}
+sayHello('Mike');
+```
+- 주의: 함수 내 지역변수는 외부에서 사용할 수 없다.
+- 전역과 지역은 서로 간섭받지 않는다.
 
 
 
