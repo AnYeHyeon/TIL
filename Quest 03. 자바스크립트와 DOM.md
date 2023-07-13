@@ -33,13 +33,23 @@ Web Assembly어로 다양한 언어로 웹브라우저에서 동작하도록 할
 - `const` : 변하지 않는 값
 
 ### 자료형
-- 문자형 String
+- 문자형 String :
 ``` "Mike", 'Mike', `Mike` ```
 ```
 const name = "Mike";
-const message2 = 'My name is ${name}`;`
+const message3 = 'My name is ${name}`;
+
+const message4 = `나는 ${30+1}살 입니다.`;
+console.log(message4)
+
+console.log(6 % 4) // 나머지
 ```
-- 
+- booleam
+- 객체형 typeof : null != 객체가 아니다
+- 대화상자 : 
+  - alert() : 띄워주기
+  - prompt() : 입력받을 수 있음
+    ```const name = prompt("예약일을 입력해주세요.", "2023-07-")```
 
 ## Checklist
 * 자바스크립트는 버전별로 어떻게 변화하고 발전해 왔을까요?   
