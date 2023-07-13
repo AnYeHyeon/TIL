@@ -165,6 +165,11 @@ swich(평가항목) {
 ```
 
 ### 함수(function)
+- 읽기 쉬고 어떤 동작인지 알 수 있게 네이밍
+- `showError` : 에러를 보여줌
+- `getName` : 이름을 얻어옴
+- `createUserData` : 유저데이터 생성
+
 ```
 function 함수 sayHello 함수명 (매개변수) {
   console.log('Hello, ${name}');
@@ -173,9 +178,45 @@ sayHello('Mike');
 ```
 - 주의: 함수 내 지역변수는 외부에서 사용할 수 없다.
 - 전역과 지역은 서로 간섭받지 않는다.
+```
+function sayHello(name = 'friend') { // default 값 주기
+  let msg = 'Hello ${name}'
+  console.log(msg)
+}
 
+sayHello();
+sayHello('Jane');
+```
 
-
+### 7. 함수 표현식, 화살표 함수(arrow function)
+함수 선언문 vs 함수 표현식
+- 호출할 수 있는 타이밍이 다름
+- 함수 선언문 : 어디서든 호출 가능
+  호이스팅(hoistion) : JavaScript의 실행 전 초기화 상태에서 코드의 모든 함수 선언문을 찾아서 생성해준다. 
+- 함수 표현식 : JavaScript가 한줄씩 실행하고 해당 코드에 도달해야만 실행된다. 
+```
+// 함수 표현식
+let sayHello = function() {
+  console.log('Hello');
+}
+```
+**화살표 함수**
+- return 문이 한줄이면 일반괄호 사용가능
+```
+let add = function(num1, num2) {
+  return num1 + num2;
+}
+```
+```
+let add = (num1, num2) => {
+  return num1 + num2;
+}
+let add = (num1, num2) => num1 + num2;
+let sayHello = name => 'Hello, ${name}'; // 인수가 하나
+let showError = () => { // 인수가 없는 경우
+  alert('error!');
+}
+```
 
 
 
