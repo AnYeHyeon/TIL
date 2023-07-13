@@ -23,7 +23,23 @@ Web Assembly어로 다양한 언어로 웹브라우저에서 동작하도록 할
 * [Just JavaScript](https://justjavascript.com/)
 
 ## Contents
+### 변수
+- 예약어 사용하지 않기
+- 변수는 문자와 숫자, $와 _만 사용
+- 첫글자는 숫자가 될 수 없다.
+- 가급적 상수는 대문자로.
+- `console.log(age)`
+- `let` : 변할 수 있는 값. 이미 사용시 에러 발생
+- `const` : 변하지 않는 값
 
+### 자료형
+- 문자형 String
+``` "Mike", 'Mike', `Mike` ```
+```
+const name = "Mike";
+const message2 = 'My name is ${name}`;`
+```
+- 
 
 ## Checklist
 * 자바스크립트는 버전별로 어떻게 변화하고 발전해 왔을까요?   
