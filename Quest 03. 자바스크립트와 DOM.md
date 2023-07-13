@@ -13,20 +13,27 @@
   * 기타 DOM 조작을 위한 함수와 속성들
 * 변수의 스코프
   * `var`, `let`, `const`
+* 현재의 동향
+SPA (Single Page Application) 라이브러리나 프레임워크(React, View, Angular)를 통해 쉽게할 수 있음.
+Web Assembly어로 다양한 언어로 웹브라우저에서 동작하도록 할 수 있음.
 
 ## Resources
 * [자바스크립트 첫걸음](https://developer.mozilla.org/ko/docs/Learn/JavaScript/First_steps)
 * [자바스크립트 구성요소](https://developer.mozilla.org/ko/docs/Learn/JavaScript/Building_blocks)
 * [Just JavaScript](https://justjavascript.com/)
 
+## Contents
+
+
 ## Checklist
 * 자바스크립트는 버전별로 어떻게 변화하고 발전해 왔을까요?   
-:  2008, 7 ECMAScript 6 -> 10. 각 브라우저별로 다른 표현을 통합하는 프로젝트를 시행. 
+:  2008, 7 ECMAScript 6 -> 10. 각 브라우저별로 다른 표현을 통합하는 프로젝트를 시행.
   * 자바스크립트의 버전들을 가리키는 ES5, ES6, ES2016, ES2017 등은 무엇을 이야기할까요?    
   : ECMAScript는 자바스크립트의 표준화된 버전을 말하며, ECMA International에서 정의하고 유지보수 한다. 대체로 버전 5,6 에서 대대적인 변화가 일어났으며, 특히 6에서는 새로운 기능과 문법, 확장된 표준 라이브러리 등이 포함되어 있다. 이 버전에서는 let 및 const 키워드를 사용한 블록 스코프 변수 선언, 화살표 함수, 클래스, 모듈 등과 같은 많은 기능이 도입되었다.
   * 자바스크립트의 표준은 어떻게 제정될까요?   
   : ECMA International이라는 국제 표준화 기구에 의해 관리되며, 제안, 초안, 후보, 표준 단계를 거쳐 제정된다. ECMAScript의 표준은 개발자 커뮤니티와 산업의 요구, 기술적인 적용 가능성 등을 고려하여 결정된다. TC39 위원회는 이러한 다양한 요소를 고려하여 표준을 개발하며, 개발자들은 이를 참고하여 현대적인 자바스크립트 코드를 작성하고 브러우저나 다른 환경에서 호환성을 유지할 수 있다.
 * 자바스크립트의 문법은 다른 언어들과 비교해 어떤 특징이 있을까요?
+:
   * 자바스크립트에서 반복문을 돌리는 방법은 어떤 것들이 있을까요?
 * 자바스크립트를 통해 DOM 객체에 CSS Class를 주거나 없애려면 어떻게 해야 하나요?
   * IE9나 그 이전의 옛날 브라우저들에서는 어떻게 해야 하나요?
