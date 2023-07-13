@@ -23,7 +23,7 @@ Web Assembly어로 다양한 언어로 웹브라우저에서 동작하도록 할
 * [Just JavaScript](https://justjavascript.com/)
 
 ## Contents
-### 변수
+### 1. 변수
 - 예약어 사용하지 않기
 - 변수는 문자와 숫자, $와 _만 사용
 - 첫글자는 숫자가 될 수 없다.
@@ -32,7 +32,7 @@ Web Assembly어로 다양한 언어로 웹브라우저에서 동작하도록 할
 - `let` : 변할 수 있는 값. 이미 사용시 에러 발생
 - `const` : 변하지 않는 값
 
-### 자료형
+### 2. 자료형
 - 문자형 String :
 ``` "Mike", 'Mike', `Mike` ```
 ```
@@ -49,7 +49,143 @@ console.log(6 % 4) // 나머지
 - 대화상자 : 
   - alert() : 띄워주기
   - prompt() : 입력받을 수 있음
-    ```const name = prompt("예약일을 입력해주세요.", "2023-07-")```
+    ```
+    const name = prompt("예약일을 입력해주세요.", "2023-07-")
+    ```
+  - comfirm() : 확인과 취소버튼이 함께 있다.
+    ```
+    const isAdult = confirm("당신은 성인 입니까?");
+    console.log(isAdult);
+    ```
+
+### 3. 형변환
+- String() : 문자형으로 변환
+- Number() : 숫자형으로 변환, 문자가 있으면 -> NaN
+- Boolean() : 불린형으로 변환, 숫자 0, null, undefined false
+-> 명시적 형변환을 통해서 지정해주는 것이 좋음.
+
+### 4. 연산자
+- %는 어디다가 쓸까? -> 홀짝
+- 연산자의 전후
+```
+let num = 10;
+let result = num++; // 증가시키지 전의 값
+console.log(result);
+```
+
+### 5. 비교연산자
+- == : 동등연산자
+- === : 일치 연산자 (타입도 고려)
+- !=
+
+### 6. 조건문
+- if-else : 
+```
+if(age>19) {
+  console.log("환영합니다.")
+} else {
+  console.log("안녕히가세요.")
+}
+```
+
+### 7. 논리연산자
+- || : or
+- && : and
+- ! : not
+```
+const gender = 'F';
+const name = 'Jane';
+const isAdult = true;
+
+if (gender==='M' && name==='Mike' || isAdult) {
+  console.log('PASS')
+} else {
+  console.log('돌아가.')
+}
+>>> PASS -> and가 or보다 우선순위가 높다
+
+if (gender==='M' && (name==='Mike' || isAdult)) {
+  consule.log('PASS')
+} else {
+  console.log('돌아가.')
+}
+```
+
+### 8. 반복문
+- for
+```
+for (초깃값, 조건, 코드 실행 후 작업)
+```
+- while
+```
+let i = 0;
+
+while(i<10) {
+  console.log(i);
+  i++;
+}
+```
+- do.. while : 최소 1번은 코드를 실행함.
+```
+let i = 0;
+do {
+  i++
+} while (i<10)
+```
+- break : 멈추고 빠져나옴
+```
+while(true) {
+  let answer = confirm("계속 할까요?");
+  if(!answer) {
+    breake;
+  }
+}
+```
+- continue : 멈추고 다음 반복으로 진행
+```
+for (let i = 0, i < 10, i++) {
+  if(i%2) {
+    contine;
+  }
+  console.log(i)
+}
+```
+### switch
+- 케이스가 많은 경우 if else보다 효율적으로 사용가능하다.
+```
+swich(평가항목) {
+  case A : 
+    console.log('')
+    break;
+  case B :
+    break;
+  default:
+    console.log('')
+}
+```
+
+### 함수(function)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Checklist
 * 자바스크립트는 버전별로 어떻게 변화하고 발전해 왔을까요?   
