@@ -150,7 +150,7 @@ for (let i = 0, i < 10, i++) {
   console.log(i)
 }
 ```
-### switch
+### 9. switch
 - 케이스가 많은 경우 if else보다 효율적으로 사용가능하다.
 ```
 swich(평가항목) {
@@ -164,7 +164,7 @@ swich(평가항목) {
 }
 ```
 
-### 함수(function)
+### 10. 함수(function)
 - 읽기 쉬고 어떤 동작인지 알 수 있게 네이밍
 - `showError` : 에러를 보여줌
 - `getName` : 이름을 얻어옴
@@ -188,7 +188,7 @@ sayHello();
 sayHello('Jane');
 ```
 
-### 7. 함수 표현식, 화살표 함수(arrow function)
+### 11. 함수 표현식, 화살표 함수(arrow function)
 함수 선언문 vs 함수 표현식
 - 호출할 수 있는 타이밍이 다름
 - 함수 선언문 : 어디서든 호출 가능
@@ -218,8 +218,43 @@ let showError = () => { // 인수가 없는 경우
 }
 ```
 
+### 12. Object
+![Js_Object](https://github.com/AnYeHyeon/img/blob/main/Js_object.png?raw=true)   
+- Object 접근, 추가, 삭제
+```
+const superman = {
+  name : 'clark',
+  age : 33,
+}
+```
+```
+// 접근
+superman.name
+superman['age']
 
+// 추가
+superman.gender = 'male';
+superman['hairColor'] = 'black';
 
+// 삭제
+delete superman.hairColor;
+```
+- Object 단축 프로퍼티
+```
+const name = 'clark';
+const age = 33;
+
+const superman = {
+  name : name, => name;
+  age : age,  => age;
+  gender : 'male',
+}
+```
+- Object 프로퍼티 존재 여부 확인
+```
+'birthDay' in superman;
+'age' in superman;
+```
 
 
 
