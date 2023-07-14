@@ -329,10 +329,46 @@ for (let day of days) {
 // 주어       서술어
 $(제어대상).method1().method2();
 ```
-```
 
+### 레퍼(wrapper)
+- **jQuery(**엘리먼트 오브젝트 | 'CSS스타일 선택자'**)**
 ```
-
+<script type="text/javascript">
+//$ 대신 jQuery를 사용
+jQuery('body').html('hello world');
+</script>
+```
+```
+<script type="text/javascript">
+//$를 함수의 지역변수로 선언해서 외부에 있을지 모르는 타 라이브러리의 $와의 충돌을 예방
+(function($){
+    $('body').html('hello world');
+})(jQuery)  // 함수를 정의하는 동시에 호출
+</script>
+```
+- 제어대상을 지정하는 방법
+  - jQuery(selector, [context])
+  - jQuery(element)
+```
+<html>
+    <body>
+        <ul>
+            <li>test2</li>
+        </ul>
+        <ul class="foo">
+            <li>test</li>
+        </ul>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script type="text/javascript">
+            (function($){            
+                $('ul.foo').click( function() {  // event 호출
+                    $('li', this).css('background-color','red'); // this: ul.foo
+                });
+            })(jQuery)
+        </script>
+    </body>
+</html>
+```
 
 
 
