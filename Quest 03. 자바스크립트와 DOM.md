@@ -22,7 +22,7 @@ Web Assembly어로 다양한 언어로 웹브라우저에서 동작하도록 할
 * [자바스크립트 구성요소](https://developer.mozilla.org/ko/docs/Learn/JavaScript/Building_blocks)
 * [Just JavaScript](https://justjavascript.com/)
 
-## Contents
+## Contents 1. Javescript
 ### 1. 변수
 - 예약어 사용하지 않기
 - 변수는 문자와 숫자, $와 _만 사용
@@ -270,13 +270,54 @@ for(key in Mike) {
 
 ### 14. Object Method와 this
 - method : 객체프로퍼티로 할당된 함수
+- 자신만의 this를 가질 수 있음
+- 화살표 함수는 일반 함수와는 달리 자신만의 this를 가질 수 없으며, 화살표 함수 내부에서 this를 사용하면, 그 this는 외부에서 값을 가져온다.
+```
+const user = {
+  name : 'Mike',
+  sayHello : function() {
+    console.log('Hello, I'm ${this.name}');
+  }
+}
+```
+```
+let boy = {
+  name : 'Mike',
+  sayHello,
+  }
+let girl = {
+  name : 'Jane',
+  sayHello,
+  }
 
+sayHello : function(){
+  console.log('Hello, I'm ${this.name}');
+}
+```
 
+### 15. 배열
+```
+let students = ['Mike', 'Jane', 'Anne'];
+console.log(student[0]);
 
+student.length
+student.push // 요소 추가
+student.pop()  // 배열 끝 요소 제거
+student.shift, unshift  // 배열 앞에 제거/추가
+```
+```
+let days = ['월', '화', '수'];
 
+for (let index = 0; index < days.lenth; index++) {
+  console.log(days[index])
+}
 
+for (let day of days) {
+  console.log(day)
+}
+```
 
-
+## Contents 2. Jquery
 
 
 ## Checklist
@@ -303,6 +344,8 @@ for(key in Mike) {
   * `if`와 `for`와 `function`을 다양하게 써서 프로그래밍 하면 더 좋은 코드가 나올 수 있을까요?
   * 입력은 `prompt()` 함수를 통해 받을 수 있습니다.
   * 출력은 `console.log()` 함수를 통해 할 수 있습니다.
+
+
 * (Quest 03-2) skeleton 디렉토리에 주어진 HTML을 조작하는 스크립트를 완성해 보세요.
   * 첫째 줄에 있는 사각형의 박스들을 클릭할 때마다 배경색이 노란색↔흰색으로 토글되어야 합니다.
   * 둘째 줄에 있는 사각형의 박스들을 클릭할 때마다 `enabled`라는 이름의 CSS Class가 클릭된 DOM 노드에 추가되거나 제거되어야 합니다.
