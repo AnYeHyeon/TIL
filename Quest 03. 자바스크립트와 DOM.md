@@ -371,14 +371,28 @@ jQuery('body').html('hello world');
 </html>
 ```
 
-### 선택자
+### 선택자 [API.Jquery](https://jquery.com/)
+1. 기본
 - #jquery : id 선택자
 - .tutorial : class 선택자
 - li : 엘리먼트 선택자
 - #jquery, #MYSQL : 다중 선택자
-[API.Jquery](https://jquery.com/)
 
+2. filter 선택자
+``````
+list li:eq(2)
+```
 
+3. 속성
+```
+<input class="btn" type="button" value="[target*=&quot;BC&quot;]" /> - 속성의 값에 주어진 문자열이 포함되는 엘리먼트를 찾아내는 선택자 <br />
+<input class="btn" type="button" value="[target=&quot;DEFG&quot;]" /> - 속성의 값과 주어진 문자열이 일치하는 엘리먼트를 찾아내는 선택자 <br />
+<input class="btn" type="button" value="[target!=&quot;DEFG&quot;]" /> - 속성의 값과 주어진 문자열이 일치하지 않는 엘리먼트를 찾아내는 선택자 <br />
+<input class="btn" type="button" value="[target^=&quot;B&quot;]" /> - 속성의 값으로 주어진 문자열이 처음 등장하는 엘리먼트를 찾아내는 선택자 <br />
+<input class="btn" type="button" value="[target$=&quot;H&quot;]" /> - 속성의 값으로 주어진 문자열이 마지막으로 등장하는 엘리먼트를 찾아내는 선택자 <br />
+<input class="btn" type="button" value="[target]" /> - 속성이 존재하는 엘리먼트를 찾아내는 선택자 <br />
+<input class="btn" type="button" value="[target][id]" /> - 속성들이 존재하는 엘리먼트를 찾아내는 선택자
+```
 
 
 
