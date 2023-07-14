@@ -332,6 +332,7 @@ $(제어대상).method1().method2();
 
 ### 레퍼(wrapper)
 - **jQuery(**엘리먼트 오브젝트 | 'CSS스타일 선택자'**)**
+- 볼드체 부분이 레퍼, 인자로 전달된 요소들에 jQuery의 기능성을 부가해서 반환
 ```
 <script type="text/javascript">
 //$ 대신 jQuery를 사용
