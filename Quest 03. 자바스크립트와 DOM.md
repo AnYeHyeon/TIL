@@ -259,15 +259,17 @@ const superman = {
 ### 13. for ... in 반복문
 ```
 const superman = {
-  name : 'clark',
+  name : 'Mike',
   age : 30,
 }
 
 for(key in Mike) {
-  console.log(key)
+  console.log(Mike[key])
 }
 ```
 
+### 14. Object Method와 this
+- method : 객체프로퍼티로 할당된 함수
 
 
 
