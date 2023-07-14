@@ -256,7 +256,16 @@ const superman = {
 'age' in superman;
 ```
 
+### 13. for ... in 반복문
+```
+const superman = {
+  name : 'clark',
+  age : 30,
+}
 
+console.log(superman.name)
+console.log(superman)
+```
 
 
 
