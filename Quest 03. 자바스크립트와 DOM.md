@@ -318,6 +318,37 @@ for (let day of days) {
 ```
 
 ## Contents 2. Jquery
+- 라이브러리 : 자주 사용하는 코드들을 재사용할 수 있는 형태로 가공해서 프로그래밍 효율을 높여주는 코드들
+- Jquery?
+  1. 엘리먼트를 선택하는 강력한 방법과
+  2. 선택된 엘리먼트들을 효율적으로 제어할 수 있는 다양한 수단을 제공하는
+  3. 자바스크립트 라이브러리
+  
+```
+// 주어       서술어
+$(제어대상).method1().method2();
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## Checklist
@@ -345,6 +376,17 @@ for (let day of days) {
   * 입력은 `prompt()` 함수를 통해 받을 수 있습니다.
   * 출력은 `console.log()` 함수를 통해 할 수 있습니다.
 
+```
+number = prompt('숫자를 입력해주세요.');
+jsStars(number);
+
+function jsStars (number) {
+    for(let i = 1, j = 0; i<=number-1; i++){
+        console.log(" ".repeat(number-1-i) + "*".repeat(i + j));
+        j++;
+    }
+}
+```
 
 * (Quest 03-2) skeleton 디렉토리에 주어진 HTML을 조작하는 스크립트를 완성해 보세요.
   * 첫째 줄에 있는 사각형의 박스들을 클릭할 때마다 배경색이 노란색↔흰색으로 토글되어야 합니다.
