@@ -376,6 +376,7 @@ jQuery('body').html('hello world');
 - .tutorial : class 선택자
 - li : 엘리먼트 선택자
 - #jquery, #MYSQL : 다중 선택자
+[API.Jquery](https://jquery.com/)
 
 
 
