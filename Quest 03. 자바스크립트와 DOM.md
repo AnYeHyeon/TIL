@@ -263,8 +263,9 @@ const superman = {
   age : 30,
 }
 
-console.log(superman.name)
-console.log(superman)
+for(key in Mike) {
+  console.log(key)
+}
 ```
 
 
