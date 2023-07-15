@@ -413,7 +413,7 @@ jQuery('#tutorial').attr('href', 'http://jquery.org').attr('target', '_blank').c
 
 ### 엘리먼트 제어
 - jQuery는 엘리먼트를 제어하는 일관되고 풍부한 기능을 제공한다.
-- 
+- 삭세, 치환, 클래스
 
 
 
