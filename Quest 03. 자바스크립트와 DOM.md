@@ -402,6 +402,12 @@ list li:eq(2)
 jQuery('#tutorial').attr('href', 'http://jquery.org').attr('target', '_blank').css('color', 'red');
 ```
 
+### event
+- 시스템에서 일어나는 사건을 의미
+- javascrip나 jQuery에게 이벤트란 브라우저에서 일어나는 사건을 의미한다 (클릭, 마우스 이동, 타이핑, 페이지 로딩 등)
+- 이벤트가 발생했을 때 작동할 로직을 시스템에게 알려두면 이벤트가 발생했을 때 시스템이 그 로직을 호출한다.
+
+
 
 
 
