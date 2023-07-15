@@ -398,7 +398,9 @@ list li:eq(2)
 : jQuery의 메소드들은 반환값으로 자기 자신을 반환해야한다는 규칙을 가지고 있다.
 이를 이용하면 한번 선택한 대상에 대해서 연속적인 제어를 할 수 있다.
 
-
+```
+jQuery('#tutorial').attr('href', 'http://jquery.org').attr('target', '_blank').css('color', 'red');
+```
 
 
 
