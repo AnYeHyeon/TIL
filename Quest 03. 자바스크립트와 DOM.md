@@ -379,7 +379,7 @@ jQuery('body').html('hello world');
 - #jquery, #MYSQL : 다중 선택자
 
 2. filter 선택자
-``````
+```
 list li:eq(2)
 ```
 
