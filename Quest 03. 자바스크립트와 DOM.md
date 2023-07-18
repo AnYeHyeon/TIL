@@ -423,17 +423,6 @@ jQuery('#tutorial').attr('href', 'http://jquery.org').attr('target', '_blank').c
 ### ajax
 - 자바스크립트를 이용해서 비동기식으로 서버와 통신하는 방식. 이 때 XML을 이용한다.
 
-
-
-
-
-
-
-
-
-
-
-
 ## Checklist
 * 자바스크립트는 버전별로 어떻게 변화하고 발전해 왔을까요?   
 :  2008, 7 ECMAScript 6 -> 10. 각 브라우저별로 다른 표현을 통합하는 프로젝트를 시행.
