@@ -135,6 +135,36 @@ const MyClass = class {
 ```
 
   * 프로토타입 기반의 객체지향 프로그래밍은 무엇일까요?
+: Prototype-based Object-Oriented Programming은 객체지향 프로그래밍의 한 접근 방식으로, 클래스가 없고 프로토타입이라는 객체를 기반으로 객체를 생성하고 상속하는 개념이다. 이러한 방식은 자바스크립트와 같은 스크립트 언어에서 주로 사용되며, 객체들 간의 상속과 프로퍼티 공유를 프로토타입 체인을 통해 구현한다.   
+  - 프로토타입 기반의 객체지향 프로그래밍에서 객체는 다른 객체를 기반으로 생성되며, 기반 객체를 프로토타입이라고 한다. 이러한 프로토타입 객체는 속성들의 집합으로 이루어져 있다. 객체를 생성할 때, 해당 객체의 프로토타입을 가리키는 내부 링크를 생성한다. 이 링크를 통해 해당 객체에서 프로토타입의 속성을 찾지 못하면, 자동으로 프로토타입 체인을 따라 상위 프로토타입으로 이동하여 속성을 찾는다.
+```
+# 리터럴 표기법
+const obj = {
+  property1: value1,
+  property2: value2,
+  // ...
+};
+
+# 생성자 함수
+function MyClass() {
+  this.property1 = value1;
+  this.property2 = value2;
+  // ...
+}
+
+const obj = new MyClass();
+
+# Object.create() 메서드
+const protoObj = {
+  property1: value1,
+  property2: value2,
+  // ...
+};
+
+const obj = Object.create(protoObj);
+```
+
+
   * 자바스크립트의 클래스는 이전의 프로토타입 기반의 객체지향 구현과 어떤 관계를 가지고 있나요?
 
 ## Quest
