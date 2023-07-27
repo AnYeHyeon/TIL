@@ -166,6 +166,27 @@ const obj = Object.create(protoObj);
 
 
   * 자바스크립트의 클래스는 이전의 프로토타입 기반의 객체지향 구현과 어떤 관계를 가지고 있나요?
+: 자바 스크립트의 클래스는 이전의 프로토타입 기반의 객체지향 구현과 밀접한 관계가 있다. ES6에서 도입된 클래스 선언문은 사실 프로토타입 기반의 객체지향 프로그래밍을 구현하기 위한 문법적인 설탕(syntactic sugar)으로 볼 수 있다.   
+ES6부터 클래스 선언문을 사용하여 클래스를 더 직관적이고 가독성 있게 정의할 수 있게 되었다. 
+```
+// 클래스 선언문을 이용한 클래스 구현
+class MyClass {
+  constructor(value) {
+    this.property = value;
+  }
+
+MyClass.prototype.method = function() {
+  // 생성자 함수를 이용한 클래스 구현
+};
+
+  method() {
+    // 메서드 구현
+  }
+}
+
+const obj = new MyClass(42);
+
+```
 
 ## Quest
 * 웹 상에서 동작하는 간단한 바탕화면 시스템을 만들 예정입니다.
